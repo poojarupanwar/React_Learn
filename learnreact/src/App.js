@@ -13,7 +13,7 @@ function App() {
            {/* <ClassComponent/> */}
            {/* <FunctionComponent/> */}
            {/* <PropsComponent name='pooja' company='avalara'/> */}
-           <PropsDestructureInClass/>
+           <PropsDestructureInClass name="pooja" company="Avalara"/>
         </h1>
        
     </div>
