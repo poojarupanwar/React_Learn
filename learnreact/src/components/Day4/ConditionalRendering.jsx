@@ -26,7 +26,9 @@ class ConditionalRendering extends Component {
 //      return message;
 
     // 3-----------Using ternary operator------------
-    return this.state.isLoggedIn?<h2>Welcome to codeMind!!</h2>:<h2>Welcome Guest!!</h2>
+    // return this.state.isLoggedIn?<h2>Welcome to codeMind!!</h2>:<h2>Welcome Guest!!</h2>
+    //------------- Short circuit operator ----------
+    return this.state.isLoggedIn && <h2>Welcome to codeMind!!</h2>
 
   }
 }
@@ -34,6 +36,6 @@ class ConditionalRendering extends Component {
 export default ConditionalRendering;
 
 
-const MyComp=()=>{
-    return "Hello World...!!"
-}
+// const MyComp=()=>{
+//     return "Hello World...!!"
+// }
