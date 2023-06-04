@@ -27,7 +27,7 @@ class ConditionalRendering extends Component {
 
     // 3-----------Using ternary operator------------
     // return this.state.isLoggedIn?<h2>Welcome to codeMind!!</h2>:<h2>Welcome Guest!!</h2>
-    //------------- Short circuit operator ----------
+    //------------- 4. Short circuit operator ----------
     return this.state.isLoggedIn && <h2>Welcome to codeMind!!</h2>
 
   }
