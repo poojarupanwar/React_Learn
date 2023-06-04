@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
-import ParentComp from './Day7/ParantComp';
+import ConditionalRendering from './components/Day4/ConditionalRendering';
+// import ParentComp from './Day7/ParantComp';
 // import FormBasics from './components/Day5/FormBasics';
 // import PropsComponent from './components/Day2/PropComponent';
 // import PropsDestructureInClass from './components/Day2/PropsDestructureInClass';
@@ -22,7 +23,8 @@ function App() {
            {/* <StateComp/> */}
            {/* <StylingReactComp/> */}
            {/* <FormBasics/> */}
-           <ParentComp/>
+           {/* <ParentComp/> */}
+           <ConditionalRendering/>
         
     </div>
   );
