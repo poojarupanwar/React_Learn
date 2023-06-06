@@ -11,17 +11,13 @@ import React, { PureComponent } from 'react'
       }
     }
 
-    incrementCount=()=>{
-        this.setState({count: this.state.count+1})
-        // this.setState({count:this.state.count+1})
     
+    
+    incrementCount=() => {
+        console.log("incrementCount method called")
+       // this.setState({count:this.state.count+1})
+       this.setState({count:this.state.count})
     }
-    
-    // incrementCount=() => {
-    //     console.log("incrementCount method called")
-    //    // this.setState({count:this.state.count+1})
-    //    this.setState({count:this.state.count})
-    // }
   render() {
     console.log('render()');
     return (
