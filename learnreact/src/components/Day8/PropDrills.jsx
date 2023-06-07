@@ -13,7 +13,7 @@ class PropDrills extends Component {
         return (
       <>
       <h1>Prop Drilling</h1>
-      <ChildA/>
+      <ChildA message={this.state.message} />
       </>
     )
   }
@@ -27,9 +27,9 @@ class ChildA extends React.Component{
     return(
       <>
           <h4>
-            I am a ChildA component
+            I am a ChildA component: {this.props.message}
           </h4>
-          <ChildB/>
+          <ChildB message={this.props.message}/>
       </>
     )
   }
@@ -41,7 +41,7 @@ class ChildB extends React.Component{
     return(
       <>
           <h4>
-            I am a ChildB component
+            I am a ChildB component {this.props.message}
           </h4>
           <ChildC/>
       </>
