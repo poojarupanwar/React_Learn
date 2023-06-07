@@ -1,7 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
-import UseEffectApiUse from './components/Day10/UseEffectApiUse';
-import UseRefHook from './components/Day10/UseRefHook';
+import PropDrills from './components/Day8/PropDrills';
+// import UseEffectApiUse from './components/Day10/UseEffectApiUse';
+// import UseRefHook from './components/Day10/UseRefHook';
 // import UseEffectHook from './components/Day10/UseEffectHook';
 // import ClassCompLifeCycleMethods from './components/Day5/ClassCompLifeCycleMethods';
 // import PropDrills from './components/Day8/PropDrills';
@@ -36,7 +37,8 @@ function App() {
             {/* <PropDrills/> */}
             {/* <UseEffectHook/> */}
             {/* <UseRefHook/> */}
-            <UseEffectApiUse/>
+            {/* <UseEffectApiUse/> */}
+            <PropDrills/>
     </div>
   );
 }
