@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
-import PropDrills from './components/Day8/PropDrills';
+// import PropDrills from './components/Day8/PropDrills';
+import PropDrillsNew from './components/Day8/PropDrillsNew';
 // import UseEffectApiUse from './components/Day10/UseEffectApiUse';
 // import UseRefHook from './components/Day10/UseRefHook';
 // import UseEffectHook from './components/Day10/UseEffectHook';
@@ -22,7 +23,7 @@ function App() {
   return (
     <div className="App">
         
-          hello
+          hello..
            {/* <ClassComponent/> */}
            {/* <FunctionComponent/> */}
            {/* <PropsComponent name='pooja' company='avalara'/> */}
@@ -38,7 +39,7 @@ function App() {
             {/* <UseEffectHook/> */}
             {/* <UseRefHook/> */}
             {/* <UseEffectApiUse/> */}
-            <PropDrills/>
+            <PropDrillsNew/>
     </div>
   );
 }
