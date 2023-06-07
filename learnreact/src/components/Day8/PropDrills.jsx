@@ -27,7 +27,7 @@ class ChildA extends React.Component{
     return(
       <>
           <h4>
-            I am a ChildA component: {this.props.message}
+            I am a ChildA    
           </h4>
           <ChildB message={this.props.message}/>
       </>
@@ -41,9 +41,9 @@ class ChildB extends React.Component{
     return(
       <>
           <h4>
-            I am a ChildB component {this.props.message}
+            I am a ChildB   
           </h4>
-          <ChildC/>
+          <ChildC message={this.props.message}/>
       </>
     )
   }
@@ -54,7 +54,8 @@ class ChildC extends React.Component{
     return(
       <>
           <h4>
-            I am a ChildC component
+            I am a ChildC
+            <h3> {this.props.message}</h3>
           </h4>
       </>
     )
