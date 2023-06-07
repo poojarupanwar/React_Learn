@@ -3,8 +3,7 @@ import React, { Component } from 'react'
  class RefsComp extends Component {
     constructor(props) {
       super(props)
-       
-      // 1. create ref 
+            // 1. create ref 
       this.inputRef = React.createRef()
     }
     
