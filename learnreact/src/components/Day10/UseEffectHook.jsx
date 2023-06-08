@@ -7,7 +7,8 @@ const UseEffectHook=()=> {
     useEffect(()=>{
         console.log("useEffect -runs on every render");
     })
-
+ // useeffect with  dependencies
+  
     useEffect(()=>{
         console.log("useEffect -runs on First render");
     },[])
