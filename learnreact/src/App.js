@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import UseContextHook from './components/Day11/UseContextHook';
+// import UseContextHook from './components/Day11/UseContextHook';
 // import PropDrills from './components/Day8/PropDrills';
 // import PropDrillsNew from './components/Day8/PropDrillsNew';
 // import UseEffectApiUse from './components/Day10/UseEffectApiUse';
@@ -18,8 +18,13 @@ import UseContextHook from './components/Day11/UseContextHook';
 // import StylingReactComp from './components/Day5/StylingReactComp';
 // import FunctionComponent from './components/Day2/FunctionComponent';
 // import ClassComponent from './components/Day2/ClassComponent';
-// import BrouserRouter as router
-
+import Home from './components/Day11/Home'
+import About from './components/Day11/About'
+import ContactUs from './components/Day11/ContactUs'
+import Services from './components/Day11/Services'
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+ 
+ 
 function App() {
   return (
     <div className="App">
@@ -41,7 +46,34 @@ function App() {
             {/* <UseRefHook/> */}
             {/* <UseEffectApiUse/> */}
             {/* <PropDrillsNew/> */}
-            <UseContextHook/>
+            {/* <UseContextHook/> */}
+
+           <Router>
+            <div>
+              <ul>
+                <li>
+                  <Link to='/'>Home</Link>
+                </li>
+                <li>
+                  <Link to='/contact'>Contact</Link>
+                </li>
+                <li>
+                  <Link to='/about'>About Us</Link>
+                </li>
+                <li>
+                  <Link to='/services'>Services</Link>
+                </li>
+              </ul>
+            </div>
+
+            <Routes>
+              <Route exact path='/' element={<Home/>}> </Route>
+              <Route exact path='/contact' element={<ContactUs/>}> </Route>
+              <Route exact path='/about' element={<About/>}> </Route>
+              <Route exact path='/services' element={<Services/>}></Route>
+            </Routes>
+           </Router>
+
     </div>
   );
 }
