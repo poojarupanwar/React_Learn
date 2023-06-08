@@ -1,7 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
+import UseContextHook from './components/Day11/UseContextHook';
 // import PropDrills from './components/Day8/PropDrills';
-import PropDrillsNew from './components/Day8/PropDrillsNew';
+// import PropDrillsNew from './components/Day8/PropDrillsNew';
 // import UseEffectApiUse from './components/Day10/UseEffectApiUse';
 // import UseRefHook from './components/Day10/UseRefHook';
 // import UseEffectHook from './components/Day10/UseEffectHook';
@@ -17,7 +18,7 @@ import PropDrillsNew from './components/Day8/PropDrillsNew';
 // import StylingReactComp from './components/Day5/StylingReactComp';
 // import FunctionComponent from './components/Day2/FunctionComponent';
 // import ClassComponent from './components/Day2/ClassComponent';
-
+// import BrouserRouter as router
 
 function App() {
   return (
@@ -39,7 +40,8 @@ function App() {
             {/* <UseEffectHook/> */}
             {/* <UseRefHook/> */}
             {/* <UseEffectApiUse/> */}
-            <PropDrillsNew/>
+            {/* <PropDrillsNew/> */}
+            <UseContextHook/>
     </div>
   );
 }
