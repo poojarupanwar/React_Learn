@@ -69,9 +69,10 @@ import MyContext from './MyContext';
 const UseContextHook =()=>{
     //define the value that will be provided to consumers of the context 
     const contextValue ={
-        message:"Hello from Context",
+        message:"Hello from Context..",
         count:34
     }
+
     return(
         <>
             <MyContext.Provider value={contextValue}>
@@ -80,9 +81,7 @@ const UseContextHook =()=>{
         </>
     )
 }
-export default UseContextHook
-
-
+export default UseContextHook;
 
 const ParentComp =()=>{
     return(
