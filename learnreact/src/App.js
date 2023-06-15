@@ -1,4 +1,5 @@
 // import logo from './logo.svg';
+// import { useState } from 'react';
 import './App.css';
 // import UseContextHook from './components/Day11/UseContextHook';
 // import PropDrills from './components/Day8/PropDrills';
@@ -18,18 +19,25 @@ import './App.css';
 // import StylingReactComp from './components/Day5/StylingReactComp';
 // import FunctionComponent from './components/Day2/FunctionComponent';
 // import ClassComponent from './components/Day2/ClassComponent';
-import Home from './components/Day11/Home'
-import About from './components/Day11/About'
-import ContactUs from './components/Day11/ContactUs'
-import Services from './components/Day11/Services'
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+// import Home from './components/Day11/Home'
+// import About from './components/Day11/About'
+// import ContactUs from './components/Day11/ContactUs'
+// import Services from './components/Day11/Services'
+// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+// import MemoComp from './components/Day13/MemoComp';
+import ErrorBoundries from './components/Day13/ErrorBoundries';
  
  
 function App() {
+//   const [count,setCount]=useState(0)
+
+//   setInterval(()=>{
+// setCount(count+1)
+//   },3000);
   return (
     <div className="App">
         
-          hello..
+          {/* hello.. */}
            {/* <ClassComponent/> */}
            {/* <FunctionComponent/> */}
            {/* <PropsComponent name='pooja' company='avalara'/> */}
@@ -47,8 +55,12 @@ function App() {
             {/* <UseEffectApiUse/> */}
             {/* <PropDrillsNew/> */}
             {/* <UseContextHook/> */}
+{/* 
+            Count:{count}
+          <MemoComp count={count}/> */}
 
-           <Router>
+          <ErrorBoundries/>
+           {/* <Router>
             <div>
               <ul>
                 <li>
@@ -72,7 +84,7 @@ function App() {
               <Route exact path='/about' element={<About/>}> </Route>
               <Route exact path='/services' element={<Services/>}></Route>
             </Routes>
-           </Router>
+           </Router> */}
 
     </div>
   );
