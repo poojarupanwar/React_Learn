@@ -1,6 +1,8 @@
 // import logo from './logo.svg';
 // import { useState } from 'react';
 import './App.css';
+import './normalize.css'
+import './skeleton.css'
 // import UseContextHook from './components/Day11/UseContextHook';
 // import PropDrills from './components/Day8/PropDrills';
 // import PropDrillsNew from './components/Day8/PropDrillsNew';
@@ -25,7 +27,9 @@ import './App.css';
 // import Services from './components/Day11/Services'
 // import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 // import MemoComp from './components/Day13/MemoComp';
-import ErrorBoundries from './components/Day13/ErrorBoundries';
+// import ErrorBoundries from './components/Day13/ErrorBoundries';
+
+import UncontrolledComp from './components/Day14/UncontrolledComp';
  
  
 function App() {
@@ -59,7 +63,7 @@ function App() {
             Count:{count}
           <MemoComp count={count}/> */}
 
-          <ErrorBoundries/>
+          {/* <ErrorBoundries/> */}
            {/* <Router>
             <div>
               <ul>
@@ -85,6 +89,7 @@ function App() {
               <Route exact path='/services' element={<Services/>}></Route>
             </Routes>
            </Router> */}
+           <UncontrolledComp/>
 
     </div>
   );
