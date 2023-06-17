@@ -30,6 +30,7 @@ import './skeleton.css'
 // import ErrorBoundries from './components/Day13/ErrorBoundries';
 
 import UncontrolledComp from './components/Day14/UncontrolledComp';
+import ControlledComp from './components/Day14/ControlledComp';
  
  
 function App() {
@@ -89,7 +90,8 @@ function App() {
               <Route exact path='/services' element={<Services/>}></Route>
             </Routes>
            </Router> */}
-           <UncontrolledComp/>
+           {/* <UncontrolledComp/> */}
+           <ControlledComp/>
 
     </div>
   );
